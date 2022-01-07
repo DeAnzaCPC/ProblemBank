@@ -17,15 +17,17 @@ int main(){
     }
     // 0123 = left, up, right, down
     int direction; cin >> direction;
-    // 2 0 0 2 -> 4 0 0 0
-    // 2 2 4 4 -> 4 8 0 0
-    // 4 2 2 4 -> 4 4 4 0
     switch(direction){
         case 0: left(); break;
         case 1: up(); break;
         case 2: right(); break;
         case 3: down(); break;
     }
+
+    // alternatively, rotate the grid depending on the necessary orientation
+    // then use just the left combine function
+    // then rotate back to the starting orientation
+
     for(int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
             cout << grid[i][j] << ' ';
@@ -35,6 +37,9 @@ int main(){
 }
 
 void left(){
+    // 2 0 0 2 -> 4 0 0 0
+    // 2 2 4 4 -> 4 8 0 0
+    // 4 2 2 4 -> 4 4 4 0
     for(int row = 0; row < 4; row++){
         // combine with closest number right
         for(int i = 0; i < 3; i++){
