@@ -20,9 +20,9 @@ public:
     void rotateNotInPlace(vector<vector<int>>& matrix){
         int n = matrix.size();
         vector<vector<int>> new_matrix(n, vector<int>(n));
-        for(int j = 0; j < n; j++){
-            for(int i = n - 1; i >= 0; i--){
-                new_matrix[j][n - 1 - i] = matrix[i][j];
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
+                new_matrix[i][j] = matrix[n - 1 - j][i];
             }
         }
         matrix = move(new_matrix);
