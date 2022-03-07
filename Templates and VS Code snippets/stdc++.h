@@ -54,9 +54,11 @@
 #include <ccomplex>
 #include <cfenv>
 #include <cinttypes>
+// #include <cstdalign>
 #include <cstdbool>
 #include <cstdint>
 #include <ctgmath>
+// #include <cuchar>
 #endif
 
 // C++
@@ -126,7 +128,7 @@
 // #include <execution>
 #include <filesystem>
 #include <optional>
-#include <memory_resource>
+// #include <memory_resource>
 #include <string_view>
 #include <variant>
 #endif
@@ -141,12 +143,12 @@
 #endif
 #include <latch>
 #include <numbers>
-#include <ranges>
+// #include <ranges>
 #include <span>
-#include <stop_token>
+// #include <stop_token>
 #include <semaphore>
-#include <source_location>
-#include <syncstream>
+// #include <source_location>
+// #include <syncstream>
 #include <version>
 #endif
 
