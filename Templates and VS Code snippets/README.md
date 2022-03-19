@@ -1,15 +1,15 @@
-# VS Code Competitive Programming Templates
+# Adding vscode snippets
 
-Copy-paste into user snippets for the language.
+Using tools like https://snippet-generator.app/ to create snippets is highly recommended.
 
-
-In settings.json add:
-
-
-"editor.snippetSuggestions": "top"
-
-
+1. Click on the Settings cog on the bottom left.
+2. Copy-paste into user snippets for the language.
+3. In settings.json add:  
+`"editor.snippetSuggestions": "top"`  
 or in settings search "snippet" and change Snippet Suggestions to "top"
+
+
+
 
 # How to include <bits/stdc++.h>
 
